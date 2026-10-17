@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { FormEvent, useState } from "react";
 
 function SoliMark() {
@@ -121,12 +122,12 @@ export default function AlternativeLogin() {
               SoliEdu.
             </span>
           </div>
-          <a
+          <Link
             href="/"
             className="rounded-full border border-black/10 bg-white/30 px-4 py-2 text-[11px] font-extrabold uppercase tracking-[0.1em] backdrop-blur transition hover:bg-white/55"
           >
             Ver diseño anterior
-          </a>
+          </Link>
         </header>
 
         <div className="grid flex-1 items-center gap-8 py-8 lg:grid-cols-[1fr_520px] lg:gap-16 lg:py-10 xl:grid-cols-[1fr_560px]">
@@ -256,12 +257,12 @@ export default function AlternativeLogin() {
                 <label className="block">
                   <span className="mb-1.5 flex items-center justify-between text-xs font-extrabold">
                     Contraseña
-                    <a
+                    <Link
                       href="#recuperar"
                       className="text-[#76851e] hover:underline"
                     >
                       ¿La olvidaste?
-                    </a>
+                    </Link>
                   </span>
                   <span className="relative block">
                     <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[#8d9188]">
@@ -321,12 +322,12 @@ export default function AlternativeLogin() {
 
             <p className="mt-5 text-center text-xs font-semibold text-black/55">
               ¿Necesitás ayuda?{" "}
-              <a
+              <Link
                 href="#soporte"
                 className="font-extrabold text-black underline decoration-white decoration-4 underline-offset-4"
               >
                 Contactar soporte
-              </a>
+              </Link>
             </p>
           </section>
         </div>
